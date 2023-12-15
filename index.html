@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Michael Jreij</title>
+  <link rel="stylesheet" type="text/css" href="CSS.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="scrabble.js"></script>
+</head>
+<body>
+  <div id="contents_wrapper">
+    <header>
+      <h1>Scrabble Homework 5</h1>
+    </header>
+    <main>
+      <article>
+        <div id="debugMsg"></div>
+        <div id="scoreBoard">
+          <div>
+            <div class="label">Word:</div>
+            <div id="word"></div>
+          </div>
+          <div>
+            <div class="label">Score:</div>
+            <div id="score">0</div>
+          </div>
+          <div>
+            <div class="label">Remaining Tiles:</div>
+            <div id="remainingTiles"></div>
+          </div>
+        </div>
+        <div id="board"></div>
+        <div id="instruction">
+          <div>Create one word with no gap between letters.<img id="oneWordCheckIcon" src="scrabble/checkIcon.png" class="instructionIcon" alt="Checked" /></div>
+          <div>The word must contain at least 2 letters.<img id="minLengthIcon" src="scrabble/checkIcon.png" class="instructionIcon" alt="Checked" /></div>
+        </div>
+        <div class="buttonBox">
+          <button id="nextWordButton" onclick="nextWord()">Next Word</button>
+          <button id="restartButton" onclick="restart()">Start Over</button>
+        </div>
+        <div id="letterRack"></div>
+      </article>
+    </main>
+  </div>
+  <footer>
+    <p>Scrabble is a word game in which two to four players score points by placing tiles, each bearing a single letter, onto a game board divided into a 15×15 grid of squares.</p>
+  </footer>
+
+</body>
+</html>
+
